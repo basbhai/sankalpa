@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Layout className="flex items-center justify-center h-screen ">
       <div className=" container flex flex-col lg:flex-row mt-32">
-        <div className="w-full md:w-1/2 px-4 mb-8 ">
+        <div className="w-full lg:w-1/2 px-4 mb-8 ">
           <div className="text-center">
             <img
               src="https://mlq8klj1dy27.i.optimole.com/w:474/h:642/q:mauto/f:best/https://lexjurist.org.np/wp-content/uploads/2023/11/Abesh-Adhikari.png"
@@ -19,7 +19,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-4 mb-8">
+        <div className="w-full lg:w-1/2 px-4 mb-8">
           <div className="text-center">
             <div className="mb-4">
               <div className="text-2xl font-bold">About Us</div>

@@ -5,6 +5,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
 import LawImg from "@/Asset/Images/forBgpic.png";
 import About from "@/components/About";
+import InitiativeSection from "@/components/InitiativeSection";
+import OurPracticeArea from "@/components/OurPracticeArea";
+import SimpleFooter from "@/components/Footer";
 
 const index = () => {
   return (
@@ -33,6 +36,12 @@ const index = () => {
         </div>
         <div className="h-screen w-full ">
           <About />
+        </div>
+        <div className="h-screen relative w-full ">
+          <InitiativeSection />
+        </div>
+        <div className="h-screen relative  w-full ">
+          <OurPracticeArea />
         </div>
       </main>
     </>
