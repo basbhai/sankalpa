@@ -30,7 +30,7 @@ export const CardDefault = ({ title, src, tag, alt }) => {
 
 const InitiativeSection = () => {
   return (
-    <div className="m-14 mt-32 h-screen py-32">
+    <div className=" mt-32 h-auto lg:h-schreen">
       <div className="flex flex-col items-center justify-center my-16 ">
         <div className="flex flex-row">
           <GoLaw className="text-3xl text-blue-500" />

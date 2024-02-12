@@ -11,7 +11,7 @@ import { FaPhoenixFramework } from "react-icons/fa";
 
 export function ProfileCard({ src, title, alt, desc }) {
   return (
-    <Card className="w-96">
+    <Card className="w-[25rem]">
       <CardHeader floated={false} className="h-80">
         <img src={src} alt={alt} />
       </CardHeader>
@@ -29,7 +29,7 @@ export function ProfileCard({ src, title, alt, desc }) {
 
 const OurPracticeArea = () => {
   return (
-    <div className="m-14 mt-32 h-screen pt-32">
+    <div className="m-14  h-auto pt-0  relative">
       <div className="flex flex-col items-center justify-center my-16 ">
         <div className="flex flex-row">
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[2]" />

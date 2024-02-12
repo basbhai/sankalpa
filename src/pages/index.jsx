@@ -34,14 +34,21 @@ const index = () => {
             />
           </div>
         </div>
+
         <div className="h-screen w-full ">
           <About />
         </div>
-        <div className="h-screen relative w-full ">
+        <div className="h-auto lg:h-screen flex flex-col w-full ">
           <InitiativeSection />
+
+          {/* <OurPracticeArea /> */}
         </div>
-        <div className="h-screen relative  w-full ">
+
+        <div className=" w-full lg:h-screen lg:pt-48 lg:mt-32 ">
           <OurPracticeArea />
+        </div>
+        <div className="mt-16 w-full">
+          <SimpleFooter />
         </div>
       </main>
     </>
