@@ -11,7 +11,7 @@ import { GoLaw } from "react-icons/go";
 
 export const CardDefault = ({ title, src, tag, alt }) => {
   return (
-    <Card className="mt-6 w-96 md:w-[30rem]">
+    <Card className="mt-6 w-96 md:w-[30rem] flex-grow-0">
       <CardHeader color="blue-gray" className="relative h-56">
         <img src={src} alt={alt} />
       </CardHeader>

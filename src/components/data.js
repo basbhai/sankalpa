@@ -7,7 +7,7 @@ const navLiElement = [
   {
     id: 2,
     name: "Practice Area",
-    href: "/practiceArea",
+    href: "/OurPracticeArea",
   },
   {
     id: 3,
