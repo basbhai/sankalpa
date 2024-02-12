@@ -21,10 +21,10 @@ const index = () => {
         <StickyNavbar />
 
         <div className="h-auto   w-full flex-col    flex items-center justify-center relative ">
-          <div className=" flex justify-center  w-full rounded-2xl m-16 lg:m-0 mb-32  xl:px-64 xl:py-[7rem] xl:w-full xl:order-2 order-1 ">
+          <div className=" flex justify-center  w-full rounded-full m-16 lg:m-0 mb-32  xl:px-64 xl:py-[7rem] xl:w-full xl:order-2 order-1 ">
             <Image
               src={LawImg}
-              className="w-[100%] rounded-3xl  shadow-2xl lg:p-10 p-5 "
+              className="w-[100%] rounded-3xl bg-blue-500   shadow-2xl lg:p-10 p-5 "
             />
           </div>
           <div className=" md:absolute xl:p-32 md:top-[4rem] md:left-[10rem]  md:w-1/2  order-2 ">
