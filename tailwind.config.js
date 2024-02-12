@@ -12,6 +12,7 @@ module.exports = withMT({
     extend: {
       backgroundImage: {
         bgPic: "url('/lawstatue2.gif')",
+        bgTexture: "url('/lawstatue.png')",
         firstWaive: "url('/border-img/3.png')",
         secondWaive: "url('/border-img/3.png')",
         thirdWaive: "url('/border-img/3.png')",

@@ -29,8 +29,8 @@ export function ProfileCard({ src, title, alt, desc }) {
 
 const OurPracticeArea = () => {
   return (
-    <div className="m-14  h-auto pt-0  relative">
-      <div className="flex flex-col items-center justify-center my-16 ">
+    <div className="m-0  h-auto pt-0  relative">
+      <div className="flex flex-col items-center justify-center my-16 lg:my-3 ">
         <div className="flex flex-row">
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[2]" />
           <h3 className=" text-xl mb-5">

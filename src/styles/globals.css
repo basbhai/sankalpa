@@ -18,6 +18,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+
+  /* background-image: url("/public/bg-texture.png"); */
   background: linear-gradient(
       to right,
       transparent,

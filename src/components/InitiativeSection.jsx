@@ -38,7 +38,7 @@ const InitiativeSection = () => {
           <GoLaw className="text-3xl text-blue-500" />
         </div>
 
-        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify">
+        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify px-8">
           Our Passion for Justice Never Changes
         </h1>
       </div>

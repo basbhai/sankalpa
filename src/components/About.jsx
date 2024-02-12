@@ -4,7 +4,7 @@ import Layout from "./Layout";
 
 const About = () => {
   return (
-    <Layout className="flex items-center justify-center h-screen ">
+    <Layout className="flex items-center justify-center h-screen  bg-no-repeat ">
       <div className=" container flex flex-col lg:flex-row mt-32">
         <div className="w-full lg:w-1/2 px-4 mb-8 ">
           <div className="text-center">
