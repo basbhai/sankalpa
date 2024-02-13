@@ -6,12 +6,12 @@ import {
   Typography,
   Tooltip,
 } from "@material-tailwind/react";
-import { PracticeAreaData } from "./data";
+import { PracticeAreaData } from "../components/data";
 import { FaPhoenixFramework } from "react-icons/fa";
 
 export function ProfileCard({ src, title, alt, desc }) {
   return (
-    <Card className="w-[25rem]">
+    <Card className="w-[24rem]">
       <CardHeader floated={false} className="h-80">
         <img src={src} alt={alt} />
       </CardHeader>
@@ -29,8 +29,8 @@ export function ProfileCard({ src, title, alt, desc }) {
 
 const OurPracticeArea = () => {
   return (
-    <div className="m-0  h-auto pt-0  relative">
-      <div className="flex flex-col items-center justify-center my-16 lg:my-3 ">
+    <div className="m-0  h-auto pt-0  relative" id="OurPracticeArea">
+      <div className="flex flex-col items-center justify-center pt-32 lg:pt-64  ">
         <div className="flex flex-row">
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[2]" />
           <h3 className=" text-xl mb-5">
@@ -39,11 +39,11 @@ const OurPracticeArea = () => {
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[-2] " />
         </div>
 
-        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify">
+        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify pb-16">
           Our Practice Areas
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center gap-5 lg:flex-row">
+      <div className="flex flex-col w-full  justify-center gap-5 lg:flex-row items-stretch">
         {PracticeAreaData.map((data, index) => (
           <ProfileCard
             title={data.title}

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar,
@@ -16,6 +18,8 @@ import { useRouter } from "next/router";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
+  const reqPath = router.asPath.replace("/", "#");
+
   return (
     <Link
       href={href}
@@ -23,12 +27,13 @@ const CustomLink = ({ href, title, className = "" }) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block  bg-white 
+        className={`h-[1px] inline-block  bg-black 
         absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300
-        ${router.asPath === href ? "w-full" : "w-0"}
-        dark:bg-light `}
+        ${reqPath === href ? "w-full" : "w-0"}
+         `}
       >
+        {console.log(router.basePath)}
         &nbsp;
       </span>
     </Link>
@@ -66,11 +71,13 @@ export function StickyNavbar() {
       <Navbar className="sticky  top-0  mt-2 h-max max-w-[90%] shadow-2xl rounded-xl px-4 py-2 lg:px-8 lg:py-4 bg-transparent ">
         <div className="flex items-center justify-between text-white">
           <div className="mr-4 cursor-pointer py-1.5 font-medium bg-white rounded-3xl pr-2 shadow-lg shadow-brown-200">
-            <Image
-              className="w-[4rem] xl:w-[7rem] h-auto rounded-lg  shadow-white "
-              src={Logo}
-              alt="nature image"
-            />
+            <Link href="/">
+              <Image
+                className="w-[4rem] xl:w-[7rem] h-auto rounded-lg  shadow-white "
+                src={Logo}
+                alt="nature image"
+              />
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block text-2xl">{navList}</div>
