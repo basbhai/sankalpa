@@ -11,7 +11,7 @@ import { FaPhoenixFramework } from "react-icons/fa";
 
 export function ProfileCard({ src, title, alt, desc }) {
   return (
-    <Card className="w-[24rem]">
+    <Card className="mt-6 ml-4 w-96 md:w-[30rem] flex-grow-0">
       <CardHeader floated={false} className="h-80">
         <img src={src} alt={alt} />
       </CardHeader>
