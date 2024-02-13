@@ -29,7 +29,7 @@ export function ProfileCard({ src, title, alt, desc }) {
 
 const OurPracticeArea = () => {
   return (
-    <div className="m-0  h-auto pt-0  relative">
+    <div className="m-0  h-auto pt-0  relative" id="OurPracticeArea">
       <div className="flex flex-col items-center justify-center pt-32 lg:pt-64  ">
         <div className="flex flex-row">
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[2]" />
@@ -39,7 +39,7 @@ const OurPracticeArea = () => {
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[-2] " />
         </div>
 
-        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify">
+        <h1 className="lg:text-5xl text-[1.5rem] text-bold text-justify pb-16">
           Our Practice Areas
         </h1>
       </div>

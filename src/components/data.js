@@ -2,22 +2,22 @@ const navLiElement = [
   {
     id: 1,
     name: "About Us",
-    href: "/About",
+    href: "#About",
   },
   {
     id: 2,
     name: "Practice Area",
-    href: "/OurPracticeArea",
+    href: "#OurPracticeArea",
   },
   {
     id: 3,
     name: "Contact Us",
-    href: "contactUs",
+    href: "#contactUs",
   },
   {
     id: 4,
     name: "Docs",
-    href: "/Docs",
+    href: "#Docs",
   },
 ];
 
@@ -71,4 +71,16 @@ const PracticeAreaData = [
   },
 ];
 
-export { navLiElement, AboutData, InitativesData, PracticeAreaData };
+const ContactDetails = {
+  contactNo: "98xxxxxxxxx",
+  EMail: "sankalpaLegal@gmail.com",
+  Address: "lorem Ipsum Dolrem",
+};
+
+export {
+  navLiElement,
+  AboutData,
+  InitativesData,
+  PracticeAreaData,
+  ContactDetails,
+};

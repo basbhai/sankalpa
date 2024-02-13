@@ -2,10 +2,13 @@ import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
 import InitiativeSection from "@/components/InitiativeSection";
+import OurPracticeArea from "./OurPracticeArea";
+
+import ContactUs from "../components/ContactUs";
 
 const About = () => {
   return (
-    <div className="pt-48 lg:pt-8">
+    <div className="pt-48 lg:pt-8" id="About">
       <div
         className="flex items-center justify-center h-screen  bg-no-repeat "
         id="about"
@@ -65,8 +68,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="pt-32">
+
+      <div className="pt-32 lg:pt-8">
         <InitiativeSection />
+      </div>
+      <div className="pt-0 lg:pt-8 pb-16">
+        <OurPracticeArea />
+      </div>
+      <div className="pt-0 lg:pt-8 flex items-center pb-16 px-8">
+        <ContactUs />
       </div>
     </div>
   );

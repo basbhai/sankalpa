@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar,
@@ -16,6 +18,8 @@ import { useRouter } from "next/router";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
+  const reqPath = router.asPath.replace("/", "#");
+
   return (
     <Link
       href={href}
@@ -26,7 +30,7 @@ const CustomLink = ({ href, title, className = "" }) => {
         className={`h-[1px] inline-block  bg-black 
         absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300
-        ${router.asPath === href ? "w-full" : "w-0"}
+        ${reqPath === href ? "w-full" : "w-0"}
          `}
       >
         {console.log(router.basePath)}
