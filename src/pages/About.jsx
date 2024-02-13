@@ -75,7 +75,7 @@ const About = () => {
       <div className="pt-0 lg:pt-8 pb-16">
         <OurPracticeArea />
       </div>
-      <div className="pt-0 lg:pt-8 flex items-center pb-16 px-8">
+      <div className="pt-0 lg:pt-8 flex justify-center items-center pb-16 px-8">
         <ContactUs />
       </div>
     </div>
