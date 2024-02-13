@@ -8,6 +8,9 @@ import {
 } from "@material-tailwind/react";
 import { PracticeAreaData } from "../components/data";
 import { FaPhoenixFramework } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+import { cardVariants } from "@/components/InitiativeSection";
 
 export function ProfileCard({ src, title, alt, desc }) {
   return (
@@ -45,13 +48,23 @@ const OurPracticeArea = () => {
       </div>
       <div className="flex flex-col w-full  justify-center gap-5 lg:flex-row items-stretch">
         {PracticeAreaData.map((data, index) => (
-          <ProfileCard
-            title={data.title}
-            key={index}
-            src={data.src}
-            desc={data.tag}
-            alt={data.alt}
-          />
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
+          >
+            <ProfileCard
+              title={data.title}
+              key={index}
+              src={data.src}
+              desc={data.tag}
+              alt={data.alt}
+            />
+          </motion.div>
         ))}
       </div>
     </div>
