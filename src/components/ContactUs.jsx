@@ -11,7 +11,7 @@ const convertToNormalCase = (key) => {
 
 const ContactUs = () => {
   return (
-    <div className=" container">
+    <div className=" container" id="contactUs">
       <div className="flex flex-col items-center justify-center   ">
         <div className="flex flex-row">
           <FaPhoenixFramework className="text-3xl text-blue-500 transform scale-[2]" />
