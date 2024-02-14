@@ -43,7 +43,7 @@ const About = () => {
   const ref = useRef(null);
 
   return (
-    <div className="pt-48 lg:pt-8" id="About">
+    <div className="pt-48 px-16 lg:pt-8" id="About">
       <div
         className="flex items-center justify-center h-screen  bg-no-repeat "
         id="about"
