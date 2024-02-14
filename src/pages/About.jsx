@@ -27,11 +27,13 @@ export const rightcomVariant = {
 export const leftComVariant = {
   initial: {
     opacity: 0,
-    x: 10,
+
+    y: 100,
+
   },
   whileInView: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       type: "spring",
       duration: 4,
