@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <StickyNavbar />
       <main
-        className={`${montserrat.variable} font-mont  w-[100%] min-h-screen h-full `}
+        className={`${montserrat.variable} font-mont flex pl-4 lg:pl-0  w-[100%] min-h-screen h-full `}
       >
         <Component {...pageProps} />
       </main>

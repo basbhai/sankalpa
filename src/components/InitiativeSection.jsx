@@ -51,7 +51,9 @@ const InitiativeSection = () => {
       <div className="flex flex-col items-center justify-center my-16 ">
         <div className="flex flex-row">
           <GoLaw className="text-3xl text-blue-500" />
-          <h3 className=" text-xl mb-5">&nbsp; Our Initiatives &nbsp;</h3>
+          <h3 className=" text-xl font-bold mb-5">
+            &nbsp; Our Initiatives &nbsp;
+          </h3>
           <GoLaw className="text-3xl text-blue-500" />
         </div>
 
