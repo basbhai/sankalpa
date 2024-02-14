@@ -5,10 +5,9 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 import Layout from "./Layout";
 import Logo from "../Asset/Images/logo.png";
 import Image from "next/image";
@@ -67,7 +66,7 @@ export function StickyNavbar() {
   );
 
   return (
-    <Layout className=" flex items-center justify-center z-10 fixed !mx-0  ">
+    <div className="w-full flex items-center justify-center z-10 fixed !mx-0  ">
       <Navbar className="sticky  top-0  mt-2 h-max max-w-[90%] shadow-2xl rounded-xl px-4 py-2 lg:px-8 lg:py-4 bg-transparent ">
         <div className="flex items-center justify-between text-white">
           <div className="mr-4 cursor-pointer py-1.5 font-medium bg-white rounded-3xl pr-2 shadow-lg shadow-brown-200">
@@ -126,6 +125,6 @@ export function StickyNavbar() {
           <div className="flex items-center gap-x-1"></div>
         </MobileNav>
       </Navbar>
-    </Layout>
+    </div>
   );
 }

@@ -4,6 +4,25 @@ import { Card, List, ListItem } from "@material-tailwind/react";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { SimpleRegistrationForm } from "./SimpleRegistrationForm";
 
+import { motion } from "framer-motion";
+
+const contactVarients = {
+  initial: {
+    opacity: 0,
+    x: 1000,
+  },
+  whileInView: (index) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      delay: 1 * index,
+      duration: 5,
+    },
+  }),
+};
+
 const convertToNormalCase = (key) => {
   const result = key.replace(/([A-Z])/g, " $1");
   return result.charAt(0).toUpperCase() + result.slice(1);
@@ -29,14 +48,23 @@ const ContactUs = () => {
         <Card className=" basis-1/2">
           <h2 className=" self-center text-center">Give Us a Ring.</h2>
           <List>
-            {Object.entries(ContactDetails).map(([key, value]) => (
+            {Object.entries(ContactDetails).map(([key, value], index) => (
               <ListItem key={key}>
-                <div className="flex flex-row items-center justify-start w-full">
+                <motion.div
+                  variants={contactVarients}
+                  initial="initial"
+                  whileInView="whileInView"
+                  viewport={{
+                    once: true,
+                  }}
+                  custom={index}
+                  className="flex flex-row items-center justify-start w-full"
+                >
                   <div className="basis-[30%] md:basis-1/4">
                     {convertToNormalCase(key)}
                   </div>
                   <div className="basis-[70%] md:basis-3/4">:{value}</div>
-                </div>
+                </motion.div>
               </ListItem>
             ))}
           </List>

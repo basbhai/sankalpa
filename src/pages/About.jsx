@@ -1,12 +1,47 @@
+"use Client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Layout from "../components/Layout";
 import InitiativeSection from "@/components/InitiativeSection";
 import OurPracticeArea from "./OurPracticeArea";
+import { motion, useInView } from "framer-motion";
 
 import ContactUs from "../components/ContactUs";
 
+export const rightcomVariant = {
+  initial: {
+    opacity: 0,
+    x: -100,
+  },
+  whileInView: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+
+      duration: 3,
+    },
+  },
+};
+export const leftComVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 4,
+    },
+  },
+};
+
 const About = () => {
+  const ref = useRef(null);
+
   return (
     <div className="pt-48 lg:pt-8" id="About">
       <div
@@ -16,7 +51,13 @@ const About = () => {
         <div className=" container flex flex-col lg:flex-row mt-32">
           <div className="w-full lg:w-1/2 px-4 mb-8 ">
             <div className="text-center">
-              <img
+              <motion.img
+                variants={rightcomVariant}
+                initial="initial"
+                whileInView="whileInView"
+                viewport={{
+                  once: true,
+                }}
                 src="https://mlq8klj1dy27.i.optimole.com/w:474/h:642/q:mauto/f:best/https://lexjurist.org.np/wp-content/uploads/2023/11/Abesh-Adhikari.png"
                 alt=""
                 className="mx-auto h-auto w-3/4  rounded-tl-full rounded-bl-full"
@@ -27,7 +68,15 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-4 mb-8">
+          <motion.div
+            className="w-full lg:w-1/2 px-4 mb-8"
+            variants={leftComVariant}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{
+              once: true,
+            }}
+          >
             <div className="text-center">
               <div className="mb-4">
                 <div className="text-2xl font-bold">About Us</div>
@@ -65,7 +114,7 @@ const About = () => {
                 <i className="bi-plus mr-2" /> Learn More
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -75,7 +124,7 @@ const About = () => {
       <div className="pt-0 lg:pt-8 pb-16">
         <OurPracticeArea />
       </div>
-      <div className="pt-0 lg:pt-8 flex items-center pb-16 px-8">
+      <div className="pt-0 lg:pt-8 flex justify-center items-center pb-16 px-8">
         <ContactUs />
       </div>
     </div>
