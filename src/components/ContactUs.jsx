@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const contactVarients = {
   initial: {
     opacity: 0,
-    x: 1000,
+    x: 10,
   },
   whileInView: (index) => ({
     opacity: 1,
