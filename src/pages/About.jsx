@@ -44,7 +44,7 @@ const About = () => {
   const ref = useRef(null);
 
   return (
-    <div className="pt-0 lg:pt-8" id="About">
+    <div className="pt-0 pl-4 lg:pt-8" id="About">
       <section
         className="flex items-center z-3 justify-center h-screen  bg-no-repeat "
         id="about"
@@ -83,7 +83,7 @@ const About = () => {
             </div>
           </div>
           <motion.div
-            className="w-full lg:w-1/2 px-4 mb-8"
+            className="w-full flex items-start lg:w-1/2 px-4 mb-8"
             variants={leftComVariant}
             initial="initial"
             whileInView="whileInView"
